@@ -63,13 +63,13 @@ SetBorderColor 0 240 190 255
 SetBackgroundColor 47 0 74 255
 PlayEffect Purple
 MinimapIcon 1 Purple Diamond
-Class == "Claws"
+Class == "Claws" "Bows"
 HasExplicitMod "Carbonising" "Crystalising" "Vapourising"
 PlayAlertSound 10 300
 
 
 #------------------------------------
-#   [0504] Gembased
+#   [0504] Bow Specific
 #------------------------------------
 
 Show # $type->rareid $tier->gem_bow
@@ -198,7 +198,6 @@ Corrupted False
 PlayAlertSound 10 300
 
 
-
 #------------------------------------
 #   [0513] Quivers
 #------------------------------------
@@ -234,7 +233,7 @@ Show # $type->rareid $tier->sent_good
 	MinimapIcon 1 Purple Diamond
 PlayAlertSound 10 300
 
-Show # $type->rareid $tier->sent_good
+Show # $type->rareid $tier->sent_good2
 	Identified True
 	Rarity Magic
 	Class "Sentinel Drone"
