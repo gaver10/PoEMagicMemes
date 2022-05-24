@@ -176,7 +176,7 @@ Show # $type->rareid $tier->shield_lifefocus
 	PlayEffect Purple
 	MinimapIcon 1 Purple Diamond
 PlayAlertSound 10 300
-HasExplicitMod "of the Solar Storm" "of the Lightning Rod" "of the Deathless" "Flame Shaper's" "of Nullification" "Runic" "Xoph's"
+HasExplicitMod "of the Solar Storm" "of the Lightning Rod" "of the Deathless" "Flame Shaper's" "of Nullification" "Runic" "Xoph's" "of the Mammoth"
 
 #------------------------------------
 #   [0511] Amulets
