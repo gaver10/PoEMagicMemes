@@ -39,7 +39,7 @@ Show # $type->rareid $tier->weapon_phys
 	Identified True
 	DropLevel >= 55
 	Rarity Magic
-	Class "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "Thrusting One Hand Swords" "One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+	Class "Bows" "Claws" "Daggers" "One Hand Axes" "Thrusting One Hand Swords"  "Two Hand Axes" "Two Hand Maces" "Wands" "Warstaves"
 	HasExplicitMod "Merciless" "Dictator's"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
@@ -158,7 +158,7 @@ Show # $type->rareid $tier->shield_lifefocus
 	PlayEffect Purple
 	MinimapIcon 1 Purple Diamond
 PlayAlertSound 10 300
-HasExplicitMod "of the Deathless" "Flame Shaper's" "of Nullification" "Runic" "Xoph's" 
+HasExplicitMod "Flame Shaper's" "of Nullification" "Runic" "Xoph's" "Lithomancer's"
 
 #------------------------------------
 #   [0511] Amulets
