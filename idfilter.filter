@@ -9,7 +9,7 @@
 
 Show # %HS5 $type->exoticmods $tier->t1veil
 	Identified True
-	Rarity Magic
+	Rarity >= Magic
 	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Leo's Veiled" "Rin's Veiled" "Vagan's Veiled" "Vorici's Veiled"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
@@ -21,7 +21,7 @@ Show # %HS5 $type->exoticmods $tier->t1veil
 
 Show # %HS4 $type->exoticmods $tier->t2veil
 	Identified True
-	Rarity Magic
+	Rarity >= Magic
 	HasExplicitMod "Gravicius' Veiled" "Guff's Veiled" "Haku's" "It That Fled's Veiled" "Korell's Veiled" "of Aisling's Veil" "of Cameria's Veil" "of Hillock's Veil" "of Janus' Veil" "of Jorgin's Veil" "Riker" "Tora's Veiled"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
@@ -38,8 +38,8 @@ Show # %HS4 $type->exoticmods $tier->t2veil
 Show # $type->rareid $tier->weapon_phys
 	Identified True
 	DropLevel >= 55
-	Rarity Magic
-	Class "Bows" "Claws" "Daggers" "One Hand Axes" "Thrusting One Hand Swords"  "Two Hand Axes" "Two Hand Maces" "Wands" "Warstaves"
+	Rarity >= Magic
+	Class "Warstaves"
 	HasExplicitMod "Merciless" "Dictator's"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
@@ -56,7 +56,7 @@ PlayAlertSound 10 300
 
 Show # $type->rareid $tier->gem_bow
 	Identified True
-	Rarity Magic
+	Rarity >= Magic
 	Class "Bows"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
@@ -74,15 +74,28 @@ PlayAlertSound 10 300
 
 Show # $type->rareid $tier->caster_fireweapont2
 	Identified True
-	Rarity Magic
-	Class == "Rune Daggers" "Sceptres" "Wands"
+	Rarity >= Magic
+	Class == "Sceptres" 
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
 	SetBackgroundColor 47 0 74 255
 	PlayEffect Purple
 	MinimapIcon 1 Purple Diamond
-HasExplicitMod "Magister's" "Runic" "Xoph's" "of the Fanatical"
+HasExplicitMod "Magister's" "Xoph's" "of the Fanatical"
+PlayAlertSound 10 300
+
+Show # $type->rareid $tier->caster_fireweapont2
+	Identified True
+	Rarity >= Magic
+	Class == "Wands"
+	SetFontSize 45
+	SetTextColor 0 240 190 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 47 0 74 255
+	PlayEffect Purple
+	MinimapIcon 1 Purple Diamond
+HasExplicitMod "Magister's" 
 PlayAlertSound 10 300
 
 
@@ -93,7 +106,7 @@ PlayAlertSound 10 300
 
 Show # $type->rareid $tier->helmet_life_based
 	Identified True
-	Rarity Magic
+	Rarity >= Magic
 	Class "Helmets"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
@@ -111,7 +124,7 @@ PlayAlertSound 10 300
 
 Show # $type->rareid $tier->boots_life_based
 	Identified True
-	Rarity Magic
+	Rarity >= Magic
 	Class "Boots"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
@@ -129,7 +142,7 @@ PlayAlertSound 10 300
 
 Show # $type->rareid $tier->gloves_life_based
 	Identified True
-	Rarity Magic
+	Rarity >= Magic
 	Class "Gloves"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
@@ -149,7 +162,7 @@ PlayAlertSound 10 300
 Show # $type->rareid $tier->shield_lifefocus
 	Identified True
 	DropLevel >= 55
-	Rarity Magic
+	Rarity >= Magic
 	Class "Shields"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
@@ -158,7 +171,7 @@ Show # $type->rareid $tier->shield_lifefocus
 	PlayEffect Purple
 	MinimapIcon 1 Purple Diamond
 PlayAlertSound 10 300
-HasExplicitMod "Flame Shaper's" "of Nullification" "Runic" "Xoph's" "Lithomancer's"
+HasExplicitMod "of Nullification" 
 
 #------------------------------------
 #   [0511] Amulets
@@ -167,7 +180,7 @@ HasExplicitMod "Flame Shaper's" "of Nullification" "Runic" "Xoph's" "Lithomancer
 Show # $type->rareid $tier->amu_exalter
 	Identified True
 	Mirrored False
-	Rarity Magic
+	Rarity >= Magic
 	Class "Amulets"
 	HasExplicitMod "Exalter's" "Provocateur's" "Behemoth's" "Stormbrewer's" "Rimedweller's" "Vulcanist's"
 	SetFontSize 45
@@ -181,29 +194,12 @@ PlayAlertSound 10 300
 
 
 #------------------------------------
-#   [0513] Quivers
-#------------------------------------
-
-Show # $type->rareid $tier->quiv_hit
-	Identified True
-	Rarity Magic
-	Class "Quivers"
-	HasExplicitMod "of Splintering"
-	SetFontSize 45
-	SetTextColor 0 240 190 255
-	SetBorderColor 0 240 190 255
-	SetBackgroundColor 47 0 74 255
-	PlayEffect Purple
-	MinimapIcon 1 Purple Diamond
-PlayAlertSound 10 300
-
-#------------------------------------
 #   [0514] Sentinel
 #------------------------------------
 
 Show # $type->rareid $tier->sent_good
 	Identified True
-	Rarity Magic
+	Rarity >= Magic
 	Class "Sentinel Drone"
 	BaseType == "Ancient Stalker Sentinel" "Brimstone Stalker Sentinel" "Bronze Stalker Sentinel" "Cobalt Stalker Sentinel" "Cryptic Stalker Sentinel" "Emberstone Stalker Sentinel" "Obsidian Stalker Sentinel" "Primeval Stalker Sentinel" "Rusted Stalker Sentinel"
 	HasExplicitMod "of Splintering" "of Archaeology" "of Prosperity"
@@ -217,7 +213,7 @@ PlayAlertSound 10 300
 
 Show # $type->rareid $tier->sent_good2
 	Identified True
-	Rarity Magic
+	Rarity >= Magic
 	Class "Sentinel Drone"
 	BaseType == "Ancient Pandemonium Sentinel" "Brimstone Pandemonium Sentinel" "Bronze Pandemonium Sentinel" "Cobalt Pandemonium Sentinel" "Cryptic Pandemonium Sentinel" "Emberstone Pandemonium Sentinel" "Obsidian Pandemonium Sentinel" "Primeval Pandemonium Sentinel"
 	HasExplicitMod "of Splintering" "of Archaeology" "of Prosperity"
