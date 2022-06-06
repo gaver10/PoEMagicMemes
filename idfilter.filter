@@ -49,6 +49,20 @@ Show # $type->rareid $tier->weapon_phys
 	MinimapIcon 1 Purple Diamond
 PlayAlertSound 10 300
 
+Show # $type->rareid $tier->weapon_phys_dic
+	Identified True
+	DropLevel >= 55
+	Rarity >= Magic
+	Class "Thrusting" "Bows"
+	HasExplicitMod "Dictator's"
+	SetFontSize 45
+	SetTextColor 0 240 190 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 47 0 74 255
+	PlayEffect Purple
+	MinimapIcon 1 Purple Diamond
+PlayAlertSound 10 300
+
 
 #------------------------------------
 #   [0504] Bow Specific
@@ -88,15 +102,15 @@ PlayAlertSound 10 300
 Show # $type->rareid $tier->caster_fireweapont2
 	Identified True
 	Rarity >= Magic
-	Class == "Wands" "Rune Daggers"
+	Class == "Wands" "Rune Daggers" "Convoking Wand"
 	SetFontSize 45
 	SetTextColor 0 240 190 255
 	SetBorderColor 0 240 190 255
 	SetBackgroundColor 47 0 74 255
 	PlayEffect Purple
 	MinimapIcon 1 Purple Diamond
-HasExplicitMod "Magister's" 
-PlayAlertSound 10 300
+HasExplicitMod "Magister's" "Xoph's" "Martinet's" "Empress's" "of the Fanatical"
+PlayAlertSound 10 300 
 
 
 
